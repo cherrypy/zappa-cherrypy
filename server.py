@@ -7,11 +7,11 @@ class Server:
         return 'Hello world!'
 
 
-app = cherrypy.Application(Server(), '/', {})
+app = cherrypy.Application(Server(), '/dev/', {})
 
 
 def main():
-    cherrypy.tree.graft(app, '/')
+    cherrypy.tree.graft(app, '/dev/')
     cherrypy.server.unsubscribe()
     server = cherrypy._cpserver.Server()
     server.socket_host = '::'
