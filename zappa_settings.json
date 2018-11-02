@@ -1,0 +1,7 @@
+{
+	"dev": {
+		"s3_bucket": "cherrypy",
+		"app_function": "server.app",
+		"parameter_depth": 1
+	}
+}
